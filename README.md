@@ -1,49 +1,31 @@
-# 💳 Credit Card Checker (Luhn Algorithm)
+# 📚 Book Club - Discovery & Recommendations
 
-This project is a JavaScript tool that validates credit card numbers using the **Luhn Algorithm**. It can process multiple card numbers at once, identify which are invalid, and name the companies that issued the faulty cards.
+Welcome to the **Book Club** website! This project is a dedicated platform for book lovers to discover new reads, explore different genres, and get curated recommendations.
 
-## 🧐 What is the Luhn Algorithm?
-The Luhn algorithm is a checksum formula used to validate a variety of identification numbers, such as credit card numbers. It works by:
-1. Counting from right to left.
-2. Doubling every second digit.
-3. If the doubled number is greater than 9, subtract 9 from it.
-4. Summing all the digits.
-5. If the total sum modulo 10 is 0, the number is valid.
-
-
+## 🚀 Live Demo
+Explore the club here: [https://hayatal.github.io/bookclub-/](https://hayatal.github.io/bookclub-/)
 
 ---
 
 ## ✨ Features
-- **Validation:** Checks if a single credit card number is valid or not.
-- **Batch Processing:** Scans a large list of card numbers and filters out the invalid ones.
-- **Company Identification:** Identifies which credit card companies issued the invalid numbers based on the first digit:
-  - `3`: Amex (American Express)
-  - `4`: Visa
-  - `5`: Mastercard
-  - `6`: Discover
+- **Curated Recommendations:** A dedicated section for hand-picked books to help you find your next great read.
+- **Genre Exploration:** Browse through various categories and literary styles.
+- **Responsive Design:** Enjoy a seamless experience on mobile, tablet, and desktop.
+- **Interactive UI:** Clean and modern navigation with smooth scrolling to specific sections like `#book-recomend`.
 
 ---
 
-## 🛠️ Functions Explained
-
-### 1. `validateCred(arr)`
-The core function that implements the Luhn logic. It returns whether a card is valid or invalid.
-
-### 2. `findInvalidCard(batch)`
-Takes a nested array of card numbers and returns a new list containing only the numbers that failed the validation.
-
-### 3. `idInvalidCardCompanies(invalidBatch)`
-Takes the list of invalid cards and returns a unique list of companies that issued them, avoiding duplicates.
+## 🛠️ Built With
+- **HTML5:** Semantic structure for better SEO and accessibility.
+- **CSS3:** Custom styling, including grid layouts and responsive flexbox.
+- **JavaScript:** (Optional) To handle dynamic interactions and navigation.
+- **Google Fonts:** Beautiful typography chosen for readability.
 
 ---
 
-## 🚀 How to Run
-1. Copy the code into any JavaScript environment (like Node.js or the browser console).
-2. Call `findInvalidCard(batch)` to get the invalid cards.
-3. Call `idInvalidCardCompanies(x)` to see which companies they belong to.
-
-```javascript
-const invalidCards = findInvalidCard(batch);
-console.log(idInvalidCardCompanies(invalidCards)); 
-// Output: ['Amex', 'Visa', 'Mastercard', 'Discover']
+## 📂 Project Structure
+```text
+├── index.html          # Main landing page
+├── css/                # Stylesheets for layouts and themes
+├── images/             # Book covers and UI icons
+└── js/                 # Interactive components
